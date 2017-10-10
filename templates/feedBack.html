@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>东南御膳堂--学生反馈</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{{static_url("js/script.js")}}"></script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="{{static_url("css/bootstrap.css")}}">
+    <!--external css-->
+    <link rel="stylesheet" type="text/css" href="{{static_url("font-awesome/css/font-awesome.css")}}">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="{{static_url("css/style.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{static_url("css/style-responsive.css")}}">
+
+    <script src="{{static_url("js/jquery.js")}}")}}"></script>
+
+
+    <!-- HTML5 shim and Respond.js")}} IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")}}"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js")}}/1.4.2/respond.min.js")}}"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <section id="container" >
+      <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+            <!--logo start-->
+            <a href="index.html" class="logo"><b>东南御膳堂</b></a>
+            <!--logo end-->
+            <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                <ul class="nav top-menu">
+                    <!-- settings start -->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                            <i class="fa fa-tasks"></i>
+                            <span class="badge bg-theme">4</span>
+                        </a>
+                        <ul class="dropdown-menu extended tasks-bar">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">你有新的任务尚未处理</p>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">更新菜品</div>
+                                        <div class="percent">40%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">查看学生反馈</div>
+                                        <div class="percent">60%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">查看数据统计</div>
+                                        <div class="percent">80%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">员工信息管理</div>
+                                        <div class="percent">70%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                            <span class="sr-only">70% Complete (Important)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="external">
+                                <a href="#">查看所有任务</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- settings end -->
+                    <!-- inbox dropdown start-->
+                    <li id="header_inbox_bar" class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="index.html#"> <em class="fa fa-envelope-o"></em> <span class="badge bg-theme">5</span> </a>
+                      <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">你有五条反馈尚未查看</p>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img alt="avatar" src="{{static_url("img/ui-zac.jpg")}}")}}"></span>
+                                    <span class="subject">
+                                    <span class="from">东南小虫</span>
+                                    <span class="time">刚刚</span>
+                                    </span>
+                                    <span class="message">
+                                        我发现黄焖鸡价格好像涨了五毛！
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img alt="avatar" src="{{static_url("img/ui-divya.jpg")}}")}}"></span>
+                                    <span class="subject">
+                                    <span class="from">梅园大佬</span>
+                                    <span class="time">40 分钟前.</span>
+                                    </span>
+                                    <span class="message">
+                                     中午排队的人太多了，吃不上饭！
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img alt="avatar" src="{{static_url("img/ui-danro.jpg")}}")}}"></span>
+                                    <span class="subject">
+                                    <span class="from">野性李师傅</span>
+                                    <span class="time">2 小时前.</span>
+                                    </span>
+                                    <span class="message">
+                                        喜欢吃一号的鸭腿！
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">查看所有反馈</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- inbox dropdown end -->
+                </ul>
+                <!--  notification end -->
+            </div>
+            <div class="top-menu">
+            	<ul class="nav pull-right top-menu">
+                    <li><a data-toggle="modal" href="feedBack.html#logOutModal" class="logout"> 退出登录?</a></li>
+           	  </ul>
+        </div>
+    </header>
+      <!--header end-->
+
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+
+              	  <p class="centered"><a href="profile.html"><img src="{{static_url("img/ui-sam.jpg")}}")}}" class="img-circle" width="60"></a></p>
+              	  <h5 class="centered">梅园-王经理</h5>
+              	  <li class="mt">
+              	  	<a class="active toIndex">
+              	  		<em class="fa fa-dashboard"></em>
+              	  		<span>控制台</span>
+              	  	</a>
+              	  </li>
+              	  <li class="sub-menu">
+                      <a>
+                          <i class="fa fa-desktop"></i>
+                          <span>精品菜谱</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  class="toManageFoodofMei">梅园</a></li>
+                          <li><a  class="toManageFoodofMei">桃园</a></li>
+                          <li><a  class="toManageFoodofMei">橘园</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>信息管理</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  class="toFeedBack">梅园</a></li>
+                          <li><a  class="toFeedBack">桃园</a></li>
+                          <li><a  class="toFeedBack">橘园</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-book"></i>
+                          <span>经营统计</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  class="toStatistics">梅园</a></li>
+                          <li><a  class="toStatistics">桃园</a></li>
+                          <li><a  class="toStatistics">橘园</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+      <div class="copyrights">Collect from <a href="http://www.seu.edu.cn/" >食小堂</a></div>
+
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper site-min-height">
+          	<h3><i class="fa fa-angle-right"></i> 信息管理</h3>
+          	<hr>
+            <div class="showback">
+      			<h4><i class="fa fa-angle-right"></i> 反馈处理</h4>
+				<div class="alert alert-warning alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				<strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
+				</div>
+                <div class="alert alert-warning alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				<strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
+				</div>
+                <div class="alert alert-warning alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				<strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
+				</div>
+				<div class="alert alert-warning alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				<strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
+				</div>
+                <div class="alert alert-warning alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				<strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
+				</div>
+
+                <h4><i class="fa fa-angle-right"></i> 失物招领</h4>
+				<div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
+				<div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
+				<div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
+				<div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
+				<div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
+				<div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
+
+                <h4><i class="fa fa-angle-right"></i> 食堂公告</h4>
+                <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
+                <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
+                <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
+                <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
+                <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
+                <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
+
+                <h4><i class="fa fa-angle-right"></i> 新品发布</h4>
+                <div class="alert alert-warning"><b>新品!</b> 梅园食堂发布新品啦，即日起三天免费品尝！</div>
+                <div class="alert alert-warning"><b>新品!</b> 梅园食堂发布新品啦，即日起三天免费品尝！</div>
+                <div class="alert alert-warning"><b>新品!</b> 梅园食堂发布新品啦，即日起三天免费品尝！</div>
+                <div class="alert alert-warning"><b>新品!</b> 梅园食堂发布新品啦，即日起三天免费品尝！</div>
+                <div class="alert alert-warning"><b>新品!</b> 梅园食堂发布新品啦，即日起三天免费品尝！</div>
+				<!--<div class="alert alert-danger"><b>Oh snap!</b> Change a few things up and try submitting again.</div>-->
+      		</div><!-- /showback -->
+			<!-- INPUT MESSAGES -->
+          	<div class="row mt">
+          		<div class="col-lg-12">
+          			<div class="form-panel">
+                  	  <h4 class="mb"><i class="fa fa-angle-right"></i>信息发布</h4>
+                          <form class="form-horizontal tasi-form">
+                              <div class="form-group has-success">
+                                <label class="col-sm-2 control-label col-lg-2">消息类型</label>
+                                  <div class="col-lg-10">
+                                    <select class="form-control" id="inputMsgType">
+						            <option>失物招领</option>
+						            <option>食堂公告</option>
+						            <option>新品发布</option>
+						            </select>
+                                  </div>
+                              </div>
+                              <div class="form-group has-success">
+                                <label class="col-sm-2 control-label col-lg-2">所属食堂</label>
+                                  <div class="col-lg-10">
+                                    <select class="form-control" id="inputCant">
+						            <option>梅园</option>
+						            <option>桃园</option>
+						            <option>橘园</option>
+						            </select>
+                                  </div>
+                              </div>
+                              <div class="form-group has-success">
+                                  <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">消息内容</label>
+                                  <div class="col-lg-10">
+                                      <input type="text" class="form-control" id="inputName">
+                                  </div>
+                              </div>
+
+                              <button class="btn btn-primary btn-lg btn-block" type="button">发布</button>
+                          </form>
+          			</div><!-- /form-panel -->
+          		</div><!-- /col-lg-12 -->
+          	</div><!-- /row -->
+		  </section><! --/wrapper -->
+      </section><!-- /MAIN CONTENT -->
+
+      <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center"> 2014 - Alvarez.is - More Templates <a href="http://www.seu.edu.cn" target="_blank" title="东南大学">东南大学</a> - Collect from <a href="http://http://www.seu.edu.cn" title="食小堂" target="_blank">食小堂</a> <a href="index.html#" class="go-top"> <em class="fa fa-angle-up"></em> </a></div>
+      </footer>
+      <!--footer end-->
+      <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="logOutModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">退出登录?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p> 您确定退出系统吗？</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-dismiss="modal" class="btn btn-default" type="button">取消</button>
+                        <button class="btn btn-theme" type="button" id="logout">退出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- modal -->
+  </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="{{static_url("js/bootstrap.min.js")}}"></script>
+    <script class="include" type="text/javascript" src="{{static_url("js/jquery.dcjqaccordion.2.7.js")}}"></script>
+    <script src="{{static_url("js/jquery.scrollTo.min.js")}}"></script>
+    <script src="{{static_url("js/jquery.nicescroll.js")}}" type="text/javascript"></script>
+
+
+    <!--common script for all pages-->
+    <script src="{{static_url("js/common-scripts.js")}}"></script>
+
+    <!--script for this page-->
+    <script src="{{static_url("js/jquery-ui-1.9.2.custom.min.js")}}"></script>
+
+	<!--custom switch-->
+	<script src="{{static_url("js/bootstrap-switch.js")}}"></script>
+
+	<!--custom tagsinput-->
+	<script src="{{static_url("js/jquery.tagsinput.js")}}"></script>
+
+	<!--custom checkbox & radio-->
+	<script type="text/javascript" src="{{static_url("js/bootstrap-inputmask/bootstrap-inputmask.min.js")}}"></script>
+	<script src="{{static_url("js/form-component.js")}}"></script>
+
+  <script>
+      //custom select box
+      $(function(){
+          $("select.styled").customSelect();
+      });
+
+  </script>
+
+  </body>
+</html>
