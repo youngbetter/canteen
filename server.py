@@ -8,7 +8,7 @@ import tornado.httpserver
 from application import application
 from tornado.options import define, options
 
-define("port", default=8000, help="run on the given port", type=int)
+define("port", default=800, help="run on the given port", type=int)
 
 
 def main():
