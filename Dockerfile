@@ -52,6 +52,9 @@ RUN pip install tornado==4.0
 #配置redis
 RUN pip install redis==2.10.5
 
+#配置qiniu
+RUN pip install qiniu
+
 #创建一个指定的文件夹用于放置代码
 RUN mkdir -p /app
 WORKDIR /app
