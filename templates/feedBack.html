@@ -27,6 +27,19 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")}}"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js")}}/1.4.2/respond.min.js")}}"></script>
     <![endif]-->
+
+      <script type="text/html" id="SWZL">
+          <div class="alert alert-success"><span id="SWZLmsg"></span></div>
+      </script>
+
+      <script type="text/html" id="XPFB">
+          <div class="alert alert-warning"><span id="XPFBmsg"></span></div>
+      </script>
+
+      <script type="text/html" id="STGG">
+          <div class="alert alert-info"><span id="STGGmsg"></span></div>
+      </script>
+
   </head>
 
   <body>
@@ -242,51 +255,44 @@
           	<h3><i class="fa fa-angle-right"></i> 信息管理</h3>
           	<hr>
             <div class="showback">
-      			<h4><i class="fa fa-angle-right"></i> 反馈处理</h4>
-				<div class="alert alert-warning alert-dismissable">
-				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-				<strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
-				</div>
-                <div class="alert alert-warning alert-dismissable">
-				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-				<strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
-				</div>
-                <div class="alert alert-warning alert-dismissable">
-				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-				<strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
-				</div>
-				<div class="alert alert-warning alert-dismissable">
-				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-				<strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
-				</div>
-                <div class="alert alert-warning alert-dismissable">
-				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-				<strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
-				</div>
-
-                <h4><i class="fa fa-angle-right"></i> 失物招领</h4>
-				<div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
-				<div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
-				<div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
-				<div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
-				<div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
-				<div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
-
-                <h4><i class="fa fa-angle-right"></i> 食堂公告</h4>
-                <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
-                <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
-                <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
-                <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
-                <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
-                <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
-
+                <div id="FKCLTemplate">
+                    <h4><i class="fa fa-angle-right"></i> 反馈处理</h4>
+                    <div class="alert alert-warning alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
+                    </div>
+                    <div class="alert alert-warning alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
+                    </div>
+                    <div class="alert alert-warning alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
+                    </div>
+                    <div class="alert alert-warning alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
+                    </div>
+                    <div class="alert alert-warning alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <strong>震惊!</strong> 梅园食堂最热窗口居然出现了这种食材？
+                    </div>
+                </div>
+                <div id="SWZLTemplate">
+                    <h4><i class="fa fa-angle-right"></i> 失物招领</h4>
+                    <div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
+                    <div class="alert alert-success"><b>号外!</b> 这是一条失物招领信息.</div>
+                </div>
+                    <div id="STGGTemplate">
+                    <h4><i class="fa fa-angle-right"></i> 食堂公告</h4>
+                    <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
+                    <div class="alert alert-info"><b>公告!</b> 这是一条来自梅园食堂的没有意义的公告.</div>
+                </div>
+                <div id="XPFBTemplate">
                 <h4><i class="fa fa-angle-right"></i> 新品发布</h4>
                 <div class="alert alert-warning"><b>新品!</b> 梅园食堂发布新品啦，即日起三天免费品尝！</div>
                 <div class="alert alert-warning"><b>新品!</b> 梅园食堂发布新品啦，即日起三天免费品尝！</div>
-                <div class="alert alert-warning"><b>新品!</b> 梅园食堂发布新品啦，即日起三天免费品尝！</div>
-                <div class="alert alert-warning"><b>新品!</b> 梅园食堂发布新品啦，即日起三天免费品尝！</div>
-                <div class="alert alert-warning"><b>新品!</b> 梅园食堂发布新品啦，即日起三天免费品尝！</div>
-				<!--<div class="alert alert-danger"><b>Oh snap!</b> Change a few things up and try submitting again.</div>-->
+				</div>
       		</div><!-- /showback -->
 			<!-- INPUT MESSAGES -->
           	<div class="row mt">
@@ -317,11 +323,10 @@
                               <div class="form-group has-success">
                                   <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">消息内容</label>
                                   <div class="col-lg-10">
-                                      <input type="text" class="form-control" id="inputName">
+                                      <input type="text" class="form-control" id="inputMsg">
                                   </div>
                               </div>
-
-                              <button class="btn btn-primary btn-lg btn-block" type="button">发布</button>
+                              <button class="btn btn-primary btn-lg btn-block" type="button" id="addNewMsg">发布</button>
                           </form>
           			</div><!-- /form-panel -->
           		</div><!-- /col-lg-12 -->
