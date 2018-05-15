@@ -58,3 +58,11 @@ class Food(Base):
     foodGrade = Column(Float, default=0)
     foodIsSpecial = Column(Boolean, default=False)
     foodImgUrl = Column(VARCHAR(256), nullable=False)
+
+class Message(Base):
+    __tablename__ = 'Messsage'
+
+    msgId = Column(Integer, nullable=False, primary_key=True)
+    msgType = Column(VARCHAR(24), nullable=False)
+    msgCant = Column(VARCHAR(24), nullable=False)
+    msgContent = Column(VARCHAR(24), nullable=False)

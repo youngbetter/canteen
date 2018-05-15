@@ -4,7 +4,7 @@
 import tornado.web
 import json
 from methods.BaseHandler import BaseHandler
-from Database.tables import Food
+from Database.tables import Message
 from methods.userFuncs import UFuncs
 from handlers.ImageHandler import ImageHandler
 
@@ -28,5 +28,17 @@ class FeedBackHandler(BaseHandler):
             self.retjson['msgType'] = msgType
             self.retjson['msgCant'] = msgCant
             self.retjson['msgContent'] = msgContent
-
+            print msgContent+msgCant+msgType
+            new_msg = Message(
+                msgType=msgType,
+                msgCant=msgCant,
+                msgContent=msgContent,
+            )
+            self.db.merge(new_msg)
+            try:
+                self.db.commit()
+                print "HELLO"
+            except Exception,e:
+                self.db.rollback()
+                print "EROOR"
         self.write(json.dumps(self.retjson, ensure_ascii=False, indent=2))

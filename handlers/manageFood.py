@@ -18,7 +18,7 @@ class ManageFoodHandler(BaseHandler):
     def get(self):
         food = []
         try:
-            results = self.db.query(Food).order_by(desc(Food.foodId)).all()
+            results = self.db.query(Food).order_by(desc(Food.foodWinId)).all()
             if results:
                 for result in results:
                     # 对取出来的数据重新处理
