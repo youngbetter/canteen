@@ -35,9 +35,7 @@ class ManageFoodHandler(BaseHandler):
                         result.foodCantId = '桃园'
                     else:
                         result.foodCantId = '橘园'
-
                     food.append(result)
-                    print ("foodName:  foodWinName:  foodCantName:"), result.foodName, result.foodWinId, result.foodCantId
             else:
                 print "empty results"
         except Exception, e:
